@@ -11,13 +11,17 @@ const Navbar = () => {
           <img src={AdoptMeLogo} alt="adopt-me-logo" />
         </Link>
       </div>
-      <div className="navbarLinks">
-        <Link to={"/"}>Home</Link>
-        <Link to={"/about"}>About</Link>
-        <Link to={"/blog"}>Blog</Link>
-        <Link to={"/pages"}>Pages</Link>
-        <Link to={"/services"}>Services</Link>
-        <Link to={"/contact"}>Contact</Link>
+      <div className="centerLinks">
+        <Link to={"/"}>HOME</Link>
+        {/* <Link to={"/adoption"}>Adoption</Link> */}
+        <Link to={"/veterinary"}>VETERINARY</Link>
+        <Link to={"/blog"}>BLOG</Link>
+        <Link to={"/zoo-shop"}>ZOO SHOP</Link>
+        {/* <Link to={"/your-pet"}>Your Pet</Link> */}
+        <Link to={"/profile"}>PROFILE</Link>
+      </div>
+      <div className="rightLink">
+        <Link to={"/adopt-now"}>Adopt Now</Link>
       </div>
     </div>
   );
