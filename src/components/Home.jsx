@@ -9,6 +9,9 @@ import icon5 from "../assets/icon5.png";
 import icon6 from "../assets/icon6.png";
 import backgroundImg from "../assets/mainBackground.png";
 import catImage from "../assets/process.png";
+import process3 from "../assets/process1.png";
+import process2 from "../assets/process2.png";
+import process1 from "../assets/process3.png";
 
 const Home = () => {
   return (
@@ -120,11 +123,50 @@ const Home = () => {
         style={{ backgroundImage: "url(" + catImage + ")" }}
       >
         <div className="info">
-        <h1>Want a Pet for the Your Loved Ones? </h1>
-        <button className="btn">Adopt Now</button>
+          <h1>Want a Pet for the Your Loved Ones? </h1>
+          <button className="btn">Adopt Now</button>
         </div>
       </div>
-      <div className="process"></div>
+      <div className="process">
+        <div className="top_info">
+          <h1 className="work">HOW WE WORK</h1>
+          <h1 className="petAdoption">Pet Adoption Process</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            ratione quasi perspiciatis reiciendis laborum cupiditate recusandae
+            modi velit.
+          </p>
+        </div>
+        <div className="cards">
+          <div className="card">
+            <div className="img">
+              <img src={process1} />
+            </div>
+            <div className="bottom_info">
+              <h3>1. Find Your Pet</h3>
+              <p>Find your pet friend online for taking care of it</p>
+            </div>
+          </div>
+          <div className="card">
+            <div className="img">
+              <img src={process2} />
+            </div>
+            <div className="bottom_info">
+              <h3>2. Know Pet</h3>
+              <p>Meet your pet firend more closely</p>
+            </div>
+          </div>
+          <div className="card">
+            <div className="img">
+              <img src={process3} />
+            </div>
+            <div className="bottom_info">
+              <h3>1. Take Pet Home</h3>
+              <p>Take your pet to your home and spend time with it</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="reviews"></div>
     </div>
   );
