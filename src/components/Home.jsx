@@ -14,9 +14,11 @@ import process3 from "../assets/process1.png";
 import process2 from "../assets/process2.png";
 import process1 from "../assets/process3.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faFacebook } from "@fortawesome/free-brands-svg-icons";
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import {
+  faInstagram,
+  faLinkedin,
+  faXTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 const Home = () => {
   return (
     <div className="home">
@@ -32,14 +34,14 @@ const Home = () => {
         </div>
         <div className="down_info">
           <div className="social_medias">
-            <Link to={"https://www.instagram.com/"}>
+            <Link to={"https://www.instagram.com/"} target={"_blank"}>
               <FontAwesomeIcon icon={faInstagram} />
             </Link>
-            <Link to={"https://www.facebook.com/"}>
-              <FontAwesomeIcon icon={faFacebook} />
+            <Link to={"https://www.linkedin.com/"} target={"_blank"}>
+              <FontAwesomeIcon icon={faLinkedin} />
             </Link>
-            <Link to={"https://www.twitter.com/"}>
-              <FontAwesomeIcon icon={faTwitter} />
+            <Link to={"https://www.twitter.com/"} target={"_blank"}>
+              <FontAwesomeIcon icon={faXTwitter} />
             </Link>
           </div>
           <div className="left_infos">

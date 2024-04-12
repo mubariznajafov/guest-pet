@@ -36,8 +36,13 @@
       margin-top: 232px;
       width: 1150px;
       .social_medias {
-        p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        a {
           color: $secondary_color;
+          font-size: 30px;
         }
       }
       .left_infos {
