@@ -8,8 +8,7 @@ import Adoption from "./components/Adoption";
 import Veterinary from "./components/Veterinary";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import YourPet from "./components/YourPet";
-// import Adoption from "./components/Adoption";
+import Favorites from "./components/Favorites";
 
 function App() {
   return (
@@ -23,6 +22,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/zoo-shop" element={<ZooShop />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/favorites" element={<Favorites />} />
           {/* <Route path="/your-pet" element={<YourPet />} /> */}
         </Routes>
         <Footer />

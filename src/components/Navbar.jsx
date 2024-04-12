@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import AdoptMeLogo from "../assets/adopt_me_black.png";
 import "../scss/layout/navbar/_navbar.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons"
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
   return (
     <div className="navbar">
@@ -14,13 +14,11 @@ const Navbar = () => {
       </div>
       <div className="centerLinks">
         <Link to={"/"}>HOME</Link>
-        {/* <Link to={"/adoption"}>Adoption</Link> */}
         <Link to={"/veterinary"}>VETERINARY</Link>
         <Link to={"/blog"}>BLOG</Link>
         <Link to={"/zoo-shop"}>ZOO SHOP</Link>
-        {/* <Link to={"/your-pet"}>Your Pet</Link> */}
         <Link to={"/profile"}>PROFILE</Link>
-        <Link to={"/favourites"}>FAVOURITES</Link>
+        <Link to={"/favorites"}>FAVORITES</Link>
       </div>
       <div className="rightLink">
         <Link to={"/adopt-now"}>

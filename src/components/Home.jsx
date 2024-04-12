@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../scss/pages/home/_home.scss";
 import GirlWithPets from "../assets/aboutUs.png";
 import icon1 from "../assets/icon1.png";
@@ -12,7 +13,10 @@ import catImage from "../assets/process.png";
 import process3 from "../assets/process1.png";
 import process2 from "../assets/process2.png";
 import process1 from "../assets/process3.png";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 const Home = () => {
   return (
     <div className="home">
@@ -28,9 +32,15 @@ const Home = () => {
         </div>
         <div className="down_info">
           <div className="social_medias">
-            <p>Twitter</p>
-            <p>Twitter</p>
-            <p>Twitter</p>
+            <Link to={"https://www.instagram.com/"}>
+              <FontAwesomeIcon icon={faInstagram} />
+            </Link>
+            <Link to={"https://www.facebook.com/"}>
+              <FontAwesomeIcon icon={faFacebook} />
+            </Link>
+            <Link to={"https://www.twitter.com/"}>
+              <FontAwesomeIcon icon={faTwitter} />
+            </Link>
           </div>
           <div className="left_infos">
             <p className="adopt">Adopt a pet today and start caring for it.</p>
