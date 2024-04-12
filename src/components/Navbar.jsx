@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import AdoptMeLogo from "../assets/adopt_me_white.png";
+import AdoptMeLogo from "../assets/adopt_me_black.png";
 import "../scss/layout/navbar/_navbar.scss";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons"
 const Navbar = () => {
   return (
     <div className="navbar">
@@ -19,9 +20,12 @@ const Navbar = () => {
         <Link to={"/zoo-shop"}>ZOO SHOP</Link>
         {/* <Link to={"/your-pet"}>Your Pet</Link> */}
         <Link to={"/profile"}>PROFILE</Link>
+        <Link to={"/favourites"}>FAVOURITES</Link>
       </div>
       <div className="rightLink">
-        <Link to={"/adopt-now"}>Adopt Now</Link>
+        <Link to={"/adopt-now"}>
+          <FontAwesomeIcon icon={faUser} />
+        </Link>
       </div>
     </div>
   );

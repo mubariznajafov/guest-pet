@@ -7,7 +7,7 @@ import icon3 from "../assets/icon3.png";
 import icon4 from "../assets/icon4.png";
 import icon5 from "../assets/icon5.png";
 import icon6 from "../assets/icon6.png";
-import backgroundImg from "../assets/mainBackground.png";
+import DogImg from "../assets/dog_image_main.jpeg";
 import catImage from "../assets/process.png";
 import process3 from "../assets/process1.png";
 import process2 from "../assets/process2.png";
@@ -18,7 +18,7 @@ const Home = () => {
     <div className="home">
       <div
         className="topPage"
-        style={{ backgroundImage: "url(" + backgroundImg + ")" }}
+        style={{ backgroundImage: "url(" + DogImg + ")" }}
       >
         <div className="main_info">
           <h1>Guest Pet</h1>

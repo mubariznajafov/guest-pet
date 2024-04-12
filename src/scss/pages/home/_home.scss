@@ -8,8 +8,8 @@
     flex-direction: column;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
-    padding: 292px 0 40px 0;
+    background-position: center;
+    padding: 100px 40px;
     .main_info {
       text-align: center;
       h1 {
@@ -220,11 +220,11 @@
             width: 100%;
           }
         }
-        .bottom_info{
+        .bottom_info {
           text-align: center;
           width: 250px;
           margin-top: 30px;
-          p{
+          p {
             margin-top: 10px;
           }
         }
