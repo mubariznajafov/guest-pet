@@ -22,6 +22,7 @@ import {
   faLinkedin,
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import { faDog, faCat, faFishFins } from "@fortawesome/free-solid-svg-icons";
 const Home = () => {
   return (
     <div className="home">
@@ -34,6 +35,21 @@ const Home = () => {
           <h3>
             Everything for <h3 className="forColor">Pets</h3>
           </h3>
+          <div className="buttons">
+            <button>
+              <FontAwesomeIcon icon={faDog} color={"#623ab1"} />
+              Dogs
+            </button>
+            <button>
+              {" "}
+              <FontAwesomeIcon icon={faCat} color={"#623ab1"}/>
+              Cats
+            </button>
+            <button>
+              {" "}
+              <FontAwesomeIcon icon={faFishFins} color={"#623ab1"} /> Others
+            </button>
+          </div>
         </div>
         <div className="down_info">
           <div className="social_medias">

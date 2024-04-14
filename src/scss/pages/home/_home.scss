@@ -20,13 +20,33 @@
       h3 {
         color: $secondary_color;
         font-size: 40px;
-        font-weight: 400;
-        text-align: end;
+        font-weight: 700;
+        text-align: center;
         width: 500px;
       }
       .forColor {
-        color: $fifth_color;
+        color: #331d5c;
         display: inline;
+      }
+      .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin-top: 20px;
+        button {
+          color: #623ab1;
+          width: 100px;
+          padding: 10px;
+          background: $secondary_color;
+          border: 1px solid #623ab1;
+          border-radius: 4px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 8px;
+          cursor: pointer;
+        }
       }
     }
     .down_info {
@@ -283,7 +303,7 @@
               width: 100%;
             }
           }
-          .full_name{
+          .full_name {
             font-size: 20px;
             color: $secondary_color;
           }
@@ -300,7 +320,7 @@
           }
         }
       }
-      .card2{
+      .card2 {
         padding-bottom: 40px;
       }
     }
