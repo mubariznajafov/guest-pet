@@ -13,10 +13,15 @@ import catImage from "../assets/process.png";
 import process3 from "../assets/process1.png";
 import process2 from "../assets/process2.png";
 import process1 from "../assets/process3.png";
+import person3 from "../assets/person3.png";
+import person2 from "../assets/person2.png";
+import person1 from "../assets/person1.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faFacebook } from "@fortawesome/free-brands-svg-icons";
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import {
+  faInstagram,
+  faLinkedin,
+  faXTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 const Home = () => {
   return (
     <div className="home">
@@ -32,14 +37,14 @@ const Home = () => {
         </div>
         <div className="down_info">
           <div className="social_medias">
-            <Link to={"https://www.instagram.com/"}>
+            <Link to={"https://www.instagram.com/"} target={"_blank"}>
               <FontAwesomeIcon icon={faInstagram} />
             </Link>
-            <Link to={"https://www.facebook.com/"}>
-              <FontAwesomeIcon icon={faFacebook} />
+            <Link to={"https://www.linkedin.com/"} target={"_blank"}>
+              <FontAwesomeIcon icon={faLinkedin} />
             </Link>
-            <Link to={"https://www.twitter.com/"}>
-              <FontAwesomeIcon icon={faTwitter} />
+            <Link to={"https://www.twitter.com/"} target={"_blank"}>
+              <FontAwesomeIcon icon={faXTwitter} />
             </Link>
           </div>
           <div className="left_infos">
@@ -48,7 +53,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="aboutUs">
+      {/* <div className="aboutUs">
         <div className="leftSide">
           <div className="img">
             <img src={GirlWithPets} alt="" />
@@ -66,9 +71,9 @@ const Home = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="services">
+      {/* <div className="services">
         <div className="topInfo">
           <h3>QUALITY SERVICES</h3>
           <h2>We Care About Pets </h2>
@@ -127,24 +132,16 @@ const Home = () => {
             <h4>Vaccination</h4>
           </div>
         </div>
-      </div>
-      <div
-        className="adoptNow"
-        style={{ backgroundImage: "url(" + catImage + ")" }}
-      >
-        <div className="info">
-          <h1>Want a Pet for the Your Loved Ones? </h1>
-          <button className="btn">Adopt Now</button>
-        </div>
-      </div>
+      </div> */}
+
       <div className="process">
         <div className="top_info">
           <h1 className="work">HOW WE WORK</h1>
           <h1 className="petAdoption">Pet Adoption Process</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            ratione quasi perspiciatis reiciendis laborum cupiditate recusandae
-            modi velit.
+            Our program facilitates pet adoptions by connecting potential
+            adopters with available pets through our app. Find one of potential
+            pets, contact with adopter and take it to your home!
           </p>
         </div>
         <div className="cards">
@@ -177,7 +174,71 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="reviews"></div>
+      <div
+        className="adoptNow"
+        style={{ backgroundImage: "url(" + catImage + ")" }}
+      >
+        <div className="info">
+          <h1>Want a Pet for the Your Loved Ones? </h1>
+          <button className="btn">Adopt Now</button>
+        </div>
+      </div>
+      <div className="reviews">
+        <div className="top_info">
+          <h1 className="review">REVIEWS</h1>
+          <h1 className="expressions">What people say</h1>
+          <p>Let's read what people say about our services and facilities.</p>
+        </div>
+        <div className="cards">
+          <div className="card">
+            <div className="profile">
+              <div className="img">
+                <img src={person3} alt="man_with_pet" />
+              </div>
+              <div className="full_name">Farid Hasanov</div>
+            </div>
+            <div className="expression">
+              <p>
+                “My aging pet's care became effortless with the diverse
+                offerings available. From nutritious pet foods to accessible vet
+                services, the app ensured my pet's well-being with convenience
+                at every step.”
+              </p>
+            </div>
+          </div>
+          <div className="card card2">
+            <div className="profile">
+              <div className="img">
+                <img src={person2} alt="child_with_pet" />
+              </div>
+              <div className="full_name">Leyla Jafarova</div>
+            </div>
+            <div className="expression">
+              <p>
+                "Providing everything from premium pet foods to reliable vet
+                consultations, it's been a game-changer for my pet's health and
+                happiness. Highly recommend for all pet owners seeking
+                convenience and quality.”
+              </p>
+            </div>
+          </div>
+          <div className="card">
+            <div className="profile">
+              <div className="img">
+                <img src={person1} alt="woman_with_pet" />
+              </div>
+              <div className="full_name">Aysel Aliyeva</div>
+            </div>
+            <div className="expression">
+              <p>
+                “My senior cat's needs were met beyond expectations. From
+                accessing quality pet foods to connecting with vets, the app
+                ensured a seamless experience, making pet care a breeze.”
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
