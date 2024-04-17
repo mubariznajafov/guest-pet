@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import AdoptMeLogo from "../assets/adopt_me_black.png";
+import AdoptMeLogo from "../assets/icons/adopt_me_black.png";
 import "../scss/layout/navbar/_navbar.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";

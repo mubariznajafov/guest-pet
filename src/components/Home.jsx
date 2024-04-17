@@ -1,21 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../scss/pages/home/_home.scss";
-import GirlWithPets from "../assets/aboutUs.png";
-import icon1 from "../assets/icon1.png";
-import icon2 from "../assets/icon2.png";
-import icon3 from "../assets/icon3.png";
-import icon4 from "../assets/icon4.png";
-import icon5 from "../assets/icon5.png";
-import icon6 from "../assets/icon6.png";
-import DogImg from "../assets/dog_image_main.jpeg";
-import catImage from "../assets/process.png";
-import process3 from "../assets/process1.png";
-import process2 from "../assets/process2.png";
-import process1 from "../assets/process3.png";
-import person3 from "../assets/person3.png";
-import person2 from "../assets/person2.png";
-import person1 from "../assets/person1.png";
+import DogImg from "../assets/photos/dog_image_main.jpeg";
+import catImage from "../assets/photos/process.png";
+import process3 from "../assets/photos/process1.png";
+import process2 from "../assets/photos/process2.png";
+import process1 from "../assets/photos/process3.png";
+import person3 from "../assets/photos/person3.png";
+import person2 from "../assets/photos/person2.png";
+import person1 from "../assets/photos/person1.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
