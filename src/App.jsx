@@ -1,5 +1,5 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React, { useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Import useLocation
 import Profile from "./pages/Profile";
 import Home from "./pages/Home";
 import Blog from "./pages/Blog";
@@ -8,7 +8,8 @@ import Veterinary from "./pages/Veterinary";
 import Navbar from "./pages/Navbar";
 import Footer from "./pages/Footer";
 import Favorites from "./pages/Favorites";
-import Adding from "./pages/Adding";
+import Adding from "./pages/sign-in/addingName";
+import MaybeShowFooter from "./components/MaybeShowFooter";
 
 function App() {
   return (
@@ -24,7 +25,10 @@ function App() {
           <Route path="/favorites" element={<Favorites />} />
           <Route path="/adding" element={<Adding />} />
         </Routes>
-        <Footer />
+
+        <MaybeShowFooter>
+          <Footer />
+        </MaybeShowFooter>
       </Router>
     </div>
   );
