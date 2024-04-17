@@ -1,14 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Profile from "./components/Profile";
-import Home from "./components/Home";
-import Blog from "./components/Blog";
-import ZooShop from "./components/ZooShop";
-import Adoption from "./components/Adoption";
-import Veterinary from "./components/Veterinary";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Favorites from "./components/Favorites";
+import Profile from "./pages/Profile";
+import Home from "./pages/Home";
+import Blog from "./pages/Blog";
+import ZooShop from "./pages/ZooShop";
+import Veterinary from "./pages/Veterinary";
+import Navbar from "./pages/Navbar";
+import Footer from "./pages/Footer";
+import Favorites from "./pages/Favorites";
+import Adding from "./pages/Adding";
 
 function App() {
   return (
@@ -17,13 +17,12 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/adoption" element={<Adoption />} /> */}
           <Route path="/veterinary" element={<Veterinary />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/zoo-shop" element={<ZooShop />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/favorites" element={<Favorites />} />
-          {/* <Route path="/your-pet" element={<YourPet />} /> */}
+          <Route path="/adding" element={<Adding />} />
         </Routes>
         <Footer />
       </Router>

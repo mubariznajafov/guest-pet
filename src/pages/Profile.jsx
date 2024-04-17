@@ -1,7 +1,7 @@
 import React from "react";
 import "../scss/pages/profile/_profile.scss";
-import catImage from "../assets/cat-img2.png";
-import logo from "../assets/adopt_me_white.png";
+import catImage from "../assets/photos/cat-img2.png";
+import logo from "../assets/icons/adopt_me_white.png";
 const Profile = () => {
   return (
     <div className="profile">
