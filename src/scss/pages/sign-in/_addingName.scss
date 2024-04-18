@@ -1,4 +1,54 @@
 @use "../../utils/variables" as *;
 .addingName {
   text-align: center;
+  font-family: $fourth_font_family;
+  margin: 100px 0;
+  .top_informations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+      font-size: 50px;
+      margin-bottom: 10px;
+      color: #623ab1;
+    }
+    p {
+      width: 850px;
+    }
+  }
+  .form {
+    margin-top: 50px;
+    .inputs {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      .input {
+        input {
+          padding: 12px 150px 12px 10px;
+          border-radius: 5px;
+          border: 1px solid none;
+          background: rgb(231, 216, 247);
+          outline: none;
+        }
+        input::placeholder {
+          color: $fourth_color;
+        }
+      }
+    }
+    .btn {
+      button {
+        margin-top: 20px;
+        background: #623ab1;
+        color: $secondary_color;
+        padding: 10px 30px;
+        border-radius: 20px;
+        border: 1px solid none;
+        cursor: pointer;
+      }
+    }
+  }
 }
