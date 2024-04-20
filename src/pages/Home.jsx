@@ -34,12 +34,10 @@ const Home = () => {
               Dogs
             </button>
             <button>
-              {" "}
-              <FontAwesomeIcon icon={faCat} color={"#623ab1"}/>
+              <FontAwesomeIcon icon={faCat} color={"#623ab1"} />
               Cats
             </button>
             <button>
-              {" "}
               <FontAwesomeIcon icon={faFishFins} color={"#623ab1"} /> Others
             </button>
           </div>

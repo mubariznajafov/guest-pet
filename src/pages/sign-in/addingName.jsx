@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../../scss/pages/sign-in/_addingName.scss";
 
 const addingName = () => {
@@ -22,7 +23,9 @@ const addingName = () => {
             </div>
           </div>
           <div className="btn">
-            <button>Continue</button>
+            <Link to="add-email">
+              <button>Continue</button>
+            </Link>
           </div>
         </form>
       </div>
