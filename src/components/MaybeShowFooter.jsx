@@ -9,7 +9,8 @@ const MaybeShowFooter = ({ children }) => {
     if (
       location.pathname === "/add-name" ||
       location.pathname === "/add-email" ||
-      location.pathname === "/add-photo"
+      location.pathname === "/add-photo" ||
+      location.pathname === "/add-password"
     ) {
       setShowFooter(false);
     } else {

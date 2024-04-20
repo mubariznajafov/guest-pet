@@ -27,9 +27,9 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/favorites" element={<Favorites />} />
           <Route path="/add-name" element={<AddingName />} />
-          <Route path="/add-name/add-email" element={<AddingEmail />} />
-          <Route path="/add-name/add-email/add-photo" element={<AddingPhoto />} />
-          <Route path="/add-name/add-email/add-photo/add-password" element={<AddingPassword />} />
+          <Route path="/add-email" element={<AddingEmail />} />
+          <Route path="/add-photo" element={<AddingPhoto />} />
+          <Route path="/add-password" element={<AddingPassword />} />
         </Routes>
         <MaybeShowFooter>
           <Footer />

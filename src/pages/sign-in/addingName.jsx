@@ -23,7 +23,7 @@ const addingName = () => {
             </div>
           </div>
           <div className="btn">
-            <Link to="add-email">
+            <Link to="/add-email">
               <button>Continue</button>
             </Link>
           </div>
