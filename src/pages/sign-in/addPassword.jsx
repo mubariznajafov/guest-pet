@@ -1,11 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const addPassword = () => {
   return (
     <div className="addingName">
       <div className="top_informations">
         <h1>Create Password</h1>
-        
       </div>
       <div className="form">
         <form action="">
@@ -15,7 +15,9 @@ const addPassword = () => {
             </div>
           </div>
           <div className="btn">
-            <button>Submit</button>
+            <Link to="/">
+              <button>Submit</button>
+            </Link>
           </div>
         </form>
       </div>
