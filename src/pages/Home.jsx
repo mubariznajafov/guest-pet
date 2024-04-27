@@ -187,7 +187,9 @@ const Home = () => {
       >
         <div className="info">
           <h1>Want a Pet for the Your Loved Ones? </h1>
-          <button className="btn">Adopt Now</button>
+          <Link to="/add-name">
+            <button className="btn">Adopt Now</button>
+          </Link>
         </div>
       </div>
       <div className="reviews">
