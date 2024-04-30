@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import "../scss/pages/favorites/_favorites.scss";
 
 const Favorites = () => {
   return (
-    <div><h1>Favorites</h1></div>
-  )
-}
+    <div className="favorites">
+      <div className="btn">
+        <button>COMING SOON</button>
+      </div>
+    </div>
+  );
+};
 
-export default Favorites
+export default Favorites;

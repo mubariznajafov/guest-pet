@@ -1,5 +1,5 @@
-@use "../../utils//variables" as *;
-.blog {
+@use "../../utils/variables" as *;
+.zooshop {
   font-family: $default_font_family;
   display: flex;
   justify-content: center;
@@ -7,12 +7,12 @@
   padding: 200px 0 260px 0;
   background: #e3d0f8;
   .btn {
-    border: 1px solid;
+    border: 2px solid #5f249f;
     border-radius: 35px;
     button {
       margin: 10px 20px;
       padding: 5px 70px;
-      border: 1px solid;
+      border: none;
       border-radius: 35px;
       font-size: 30px;
       font-weight: 700;

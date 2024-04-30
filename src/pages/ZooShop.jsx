@@ -1,7 +1,14 @@
 import React from "react";
+import "../scss/pages/zooshop/_zooshop.scss";
 
-const ZooShop = () => {
-  return <div>ZooShop</div>;
+const Zooshop = () => {
+  return (
+    <div className="zooshop">
+      <div className="btn">
+        <button>COMING SOON</button>
+      </div>
+    </div>
+  );
 };
 
-export default ZooShop;
+export default Zooshop;
