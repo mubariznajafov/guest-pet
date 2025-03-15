@@ -291,9 +291,12 @@
         width: 350px;
         border-radius: 20px;
         padding: 80px 40px 60px 40px;
-        .profile {
+        .profiles {
           height: auto;
           gap: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           .img {
             width: 90px;
             border: 1px solid $secondary_color;

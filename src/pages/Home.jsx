@@ -119,7 +119,7 @@ const Home = () => {
         </div>
         <div className="cards">
           <div className="card">
-            <div className="profile">
+            <div className="profiles">
               <div className="img">
                 <img src={person3} alt="man_with_pet" />
               </div>
@@ -135,7 +135,7 @@ const Home = () => {
             </div>
           </div>
           <div className="card card2">
-            <div className="profile">
+            <div className="profiles">
               <div className="img">
                 <img src={person2} alt="child_with_pet" />
               </div>
@@ -151,7 +151,7 @@ const Home = () => {
             </div>
           </div>
           <div className="card">
-            <div className="profile">
+            <div className="profiles">
               <div className="img">
                 <img src={person1} alt="woman_with_pet" />
               </div>
