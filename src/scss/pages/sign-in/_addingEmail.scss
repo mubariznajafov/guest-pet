@@ -36,7 +36,6 @@
           background: #e3d0f8;
           outline: none;
           font-size: 20px;
-          
         }
         input::placeholder {
           color: #3d3d3de5;
@@ -58,5 +57,9 @@
         cursor: pointer;
       }
     }
+  }
+  .message {
+    margin-top: 10px;
+    color: red;
   }
 }

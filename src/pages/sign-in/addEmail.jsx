@@ -1,7 +1,13 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 
-const addEmail = () => {
+const AddEmail = () => {
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setMessage("Please check your email!");
+  };
+
   return (
     <div className="addingName">
       <div className="top_informations">
@@ -11,21 +17,20 @@ const addEmail = () => {
         </p>
       </div>
       <div className="form">
-        <form action="">
+        <form onSubmit={handleSubmit}>
           <div className="inputs">
             <div className="input">
-              <input type="email" id="email" placeholder="Email" />
+              <input type="email" id="email" placeholder="Email" required />
             </div>
           </div>
           <div className="btn">
-            <Link to="/add-photo">
-              <button>Continue</button>
-            </Link>
+            <button type="submit">Continue</button>
           </div>
         </form>
+        {message && <p className="message">{message}</p>}
       </div>
     </div>
   );
 };
 
-export default addEmail;
+export default AddEmail;
