@@ -5,7 +5,7 @@ const AddEmail = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setMessage("Please check your email");
+    setMessage("Please check your email!");
   };
 
   return (
