@@ -45,7 +45,7 @@ body {
   justify-content: space-around;
   align-items: center;
   font-family: "Poppins", sans-serif;
-  background: #623AB1;
+  background: #623ab1;
   padding: 50px 0;
 }
 .footer .icon {
@@ -97,6 +97,15 @@ body {
   list-style: circle;
 }
 .footer .footerLinks ul li::marker {
+  color: #fff;
+}
+.footer .footerLinks .copyright {
+  margin: 20px;
+  width: 100%;
+}
+.footer .footerLinks .copyright p {
+  text-align: center;
+  margin-top: 15px;
   color: #fff;
 }
 
