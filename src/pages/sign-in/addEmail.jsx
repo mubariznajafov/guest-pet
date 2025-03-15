@@ -18,9 +18,7 @@ const addEmail = () => {
             </div>
           </div>
           <div className="btn">
-            <Link to="/add-photo">
-              <button>Continue</button>
-            </Link>
+            <button>Continue</button>
           </div>
         </form>
       </div>
