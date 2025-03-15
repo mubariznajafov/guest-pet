@@ -110,101 +110,34 @@ body {
 }
 
 .profile {
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 600px;
-  margin: 100px 0cd;
+  padding: 200px 0 260px 0;
+  background: #e3d0f8;
 }
-.profile .leftSide {
-  width: 638px;
-  height: 100%;
-  background: #0d2450;
-  position: relative;
+.profile .btn {
+  border: 1px solid;
+  border-radius: 35px;
 }
-.profile .leftSide .img {
-  width: 400px;
-  height: 420px;
-  position: absolute;
-  top: 180px;
-  left: 100px;
-}
-.profile .leftSide .img img {
-  width: 100%;
-}
-.profile .leftSide .logo {
-  width: 100px;
-  margin: 20px;
-}
-.profile .leftSide .logo img {
-  width: 100%;
-}
-.profile .rightSide {
-  position: relative;
-  width: 802px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.profile .rightSide h2 {
-  margin-bottom: 50px;
-}
-.profile .rightSide .signUp {
-  position: absolute;
-  top: 10px;
-  right: 70px;
-}
-.profile .rightSide .signUp h2 {
-  font-size: 14px;
-}
-.profile .rightSide form {
-  width: 416px;
-}
-.profile .rightSide form .inputs .input {
-  display: flex;
-  flex-direction: column;
-  margin: 20px 0;
-}
-.profile .rightSide form .inputs .input input {
-  margin: 8px 0;
-  padding: 10px 15px;
-  outline: none;
-  background-color: #f3f3f4;
-  border: none;
-  border-radius: 5px;
-}
-.profile .rightSide form .inputs .input ::-moz-placeholder {
-  color: #9e9ea7;
-}
-.profile .rightSide form .inputs .input ::placeholder {
-  color: #9e9ea7;
-}
-.profile .rightSide form .inputs .checkbox {
-  display: flex;
-}
-.profile .rightSide form .inputs .checkbox input[type=checkbox] {
-  margin-right: 10px;
-}
-.profile .rightSide form .inputs .checkbox p {
-  font-size: 14px;
-  width: 372px;
-}
-.profile .rightSide form .inputs button {
-  background: #ea4c89;
-  border: 1px solid #ea4c89;
-  border-radius: 5px;
-  color: #fff;
-  padding: 10px 40px;
-  margin-top: 30px;
+.profile .btn button {
+  margin: 10px 20px;
+  padding: 5px 70px;
+  border: 1px solid;
+  border-radius: 35px;
+  font-size: 30px;
+  font-weight: 700;
+  background: linear-gradient(to left, #e3d0f8 50%, #5f249f 50%);
+  background-size: 200% 100%;
+  background-position: right top;
+  transition: all 0.5s ease-out;
+  color: #5f249f;
   cursor: pointer;
 }
-.profile .rightSide form .protect {
-  font-size: 11px;
-  width: 270px;
-  margin-top: 30px;
-  line-height: 20px;
+.profile .btn button:hover {
+  background-position: left top;
+  color: #e3d0f8;
 }
 
 .addingName {
