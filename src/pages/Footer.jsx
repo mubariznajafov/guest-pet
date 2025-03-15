@@ -104,6 +104,10 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+      <div className="copyright">
+        <hr />
+        <p>© 2025 GUEST PET . All Right Reserved</p>
+      </div>
     </div>
   );
 };

@@ -6,7 +6,7 @@
   align-items: center;
   font-family: $default_font_family;
   background: #623ab1;
-  padding: 50px 0;
+  padding-top: 20px;
   .icon {
     display: flex;
     justify-content: center;
@@ -61,14 +61,14 @@
         color: $secondary_color;
       }
     }
-    .copyright {
-      margin: 20px;
-      width: 100%;
-      p {
-        text-align: center;
-        margin-top: 15px;
-        color: #fff;
-      }
+  }
+  .copyright {
+    margin: 20px;
+    width: 100%;
+    p {
+      text-align: center;
+      margin-top: 15px;
+      color: #fff;
     }
   }
 }
